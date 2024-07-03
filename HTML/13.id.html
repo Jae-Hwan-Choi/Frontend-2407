@@ -13,17 +13,14 @@
         }
     </style>
     <script>
-        function changetext() {
-            document.getElementByid('myheader').innerHTML = 'have a nice day!!';
-        }
+        function changetext() {document.getElementById("myHeader").innerHTML = "Have a nice day!";}        
     </script>
 </head>
 <body style="margin: 40px;">
-    <h1 id=myheader>마이헤더</h1>
+    <h1 id=myheader>myheader</h1>
     <a href="#c4">jump chapter 4</a>
     <br><br><br><br><br><br><br><br><br><br><br>
     <h2 id="c4">chapter 4</h2>
-    <button onclick="changetext()">헤더 내용 바꾸기</button>
-   
+    <button onclick="changetext()">헤더 내용 바꾸기</button>   
 </body>
 </html>
