@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID</title>
+    <style>
+        #myheader{
+            background-color: lightblue;
+            color: black;
+            padding: 40px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function changetext() {
+            document.getElementByid('myheader').innerHTML = 'have a nice day!!';
+        }
+    </script>
+</head>
+<body style="margin: 40px;">
+    <h1 id=myheader>마이헤더</h1>
+    <a href="#c4">jump chapter 4</a>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <h2 id="c4">chapter 4</h2>
+    <button onclick="changetext()">헤더 내용 바꾸기</button>
+   
+</body>
+</html>
