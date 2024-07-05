@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        div {margin: 10px 0px;}
+        .static { position: static; border: 3px solid #73AD21;}
+        .relative { position: relative; left: 30px; border: 3px solid #73AD21;position-}
+        .fixed { position: fixed; bottom: 0; right: 0; width: 300px; border: 3px solid #73AD21;}
+        .relative2 { position: relative; width: 400px; height: 200px; border: 3px solid #73AD21; }
+        .absolute { position: absolute; top: 80px; right: 0; width: 200px; height: 100px; border: 3px solid #73AD21; }
+        .sticky { position: -webkit-sticky; /* Safari */ position: sticky; top: 0; background-color: green; border: 2px solid #4CAF50; }
+
+    </style>
+</head>
+<body style="margin: 40px;">
+    <h2>Position</h2>
+    <div class="static">
+        this &le;div&gt; element has static Position : static
+    </div>
+    <div class="relative">
+        this &le;div&gt; element has relative Position : static
+    </div>
+    <div class="fixed" style="margin-bottom: 0px;">
+        this &le;div&gt; element has fixed Position : static
+    </div>
+    <div class="relative2">
+        this &le;div&gt; element has relative2 Position : static
+        <div class="absolute" style="padding-bottom: 0px;">
+            this &le;div&gt; element has absolute Position : static
+        </div></div>
+    </div>
+    <div class="sticky">
+        this &le;div&gt; element has sticky Position : static
+    </div>    
+
+    
+</body>
+</html>
