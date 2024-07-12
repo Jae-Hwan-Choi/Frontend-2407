@@ -5,6 +5,8 @@
   <link rel="icon" type="image/x-icon" href="img/icon1.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="path/to/your/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -14,38 +16,44 @@
     a { text-decoration: none; color: inherit;}
     th { text-align: center; width: 14.28%; }
 		td { height: 120px; }
+    /* Custom CSS to reduce navbar height */
+    .navbar.bg-dark {height: 60px; /* Adjust the height as needed */padding: 0; /* Remove default padding */}
+    .navbar .navbar-brand h4 {margin: 0;line-height: 40px; /* Match the navbar height */font-size: 1.25rem; /* Adjust the font size as needed */}
+    .navbar .nav-link {line-height: 50px; /* Match the navbar height */padding: 0 10px; /* Adjust padding for links */}
+    .navbar .navbar-brand img { height: 25px; vertical-align: middle; /* Align the logo vertically */ }
+    .navbar-brand img {margin-top: -5px; /* Adjust the value as needed */}
+
+
   </style>
 
 </head>
 <body>
-  <div style="margin-top: 80px;" class="p-1 bg-success"></div>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
       <ul class="navbar-nav">
-        <a class="navbar-brand mx-5" href="7151.html">
-          <p><img src="img/smile.jpg" alt="Logo" style="height: 25px;">  재환의 자기소개</p>
+        <a class="navbar-brand mx-5" href="0711-1.html">
+          <h4><img src="img/smile.jpg" alt="Logo" style="height: 40px;" >  재환의 자기소개</h4>
         </a>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="7151.html"><i class="fa-regular fa-user"></i> 소개글</a> <!-- 1 -->
+          <a class="nav-link" href="0711-1.html"><i class="fa-regular fa-user"></i> 소개글</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="7152.html"><i class="fa-solid fa-check"></i> 태어난 곳과 사는 곳</a> > <!-- 2 -->
+          <a class="nav-link" href="0711-2.html"><i class="fa-solid fa-check"></i> 태어난 곳과 사는 곳</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="7153.html"><i class="fa-solid fa-truck-fast"></i> 내가 가 봤던곳</a> <!-- 3 -->
+          <a class="nav-link" href="0711-3.html"><i class="fa-solid fa-truck-fast"></i> 내가 가 봤던곳</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="7154.html"><i class="fa-solid fa-utensils"></i> 내가 좋아하는 음식</a> <!-- 4 -->
+          <a class="nav-link" href="0711-4.html"><i class="fa-solid fa-utensils"></i> 내가 좋아하는 음식</a>
         </li>
         <li class="nav-item ms-3">
-          <a class="nav-link" href="7155.html"><i class="fa-solid fa-gamepad"></i> 취미</a> <!-- 5 -->
+          <a class="nav-link" href="0711-5.html"><i class="fa-solid fa-gamepad"></i> 취미</a>
         </li>
       </ul>
     </div>
   </nav>
-
-  <div class="container" style="margin-top: 30px;">
-    <div class="row" style="height: 1500px;">
+  <div class="container" style="margin-top: 120px;">
+    <div class="row" style="height: 700px;">
       <div class="col-3"  style="font-size: 0.8rem;"> 
         <!-- 원형의 프로필 사진 -->
         <img src="img/mumyoung2.jpg" alt="원형프로필" class="rounded-circle" style="width: 200px; height: 200px;">
@@ -62,18 +70,9 @@
       </div>
       <!--메인영역 : 페이지마다 이 부분만 채워줌-->
       <div class="col-md-8">
-        <h1>내가 가 봤던곳</h1><br>
-        <p>해외는 일과 관광으로 중국에 몇번 다녀온게 전부입니다.</p>
-        <p>국내는 2016년 부터 일하게 된 차량 탁송업무로 전국에 안가본곳 없이</p>
-        <p>많이 다녔습니다.</p>
-        <img src="img/timeline.jpg"><br><br>
-        <h6 style="margin-left: 165px;">그동안 다닌곳의 <mark>구글타임라인</mark></h6><br><br>
-        <p>따로 특별히 기억나는곳은 없지만 추억을 생각하다보니</p>
-        <p>2021년 겨울 군산에서 인천 송도를 올라왔던 기억이 납니다</p>
-        <p>그날 폭설이 내렸는데 총 운행시간이 11시간이 걸렸습니다.</p>
-        <p>서해대교를 넘어오는데 사고만 20회 이상 본거 같습니다.</p>
-        <p>재미있던 기억도 많은데 왜 이게 떠오르는지 모르겠지만</p>
-        <p>그날의 기억은 아마 잊지 못할겁니다.</p><br><br><br><br><br>
+        <h1>취미</h1><br>
+        <p>취미라 부를건 따로 없지만 사람 만나는걸 좋아해 술자리와</p>
+        <p>모임을 자주 나가는 편입니다. </p>
       </div>
     </div>
   </div>
