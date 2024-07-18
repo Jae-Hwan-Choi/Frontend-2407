@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털시계</title>
+</head>
+<body style="margin: 40px;"> 
+    <h1 id="time"></h1> <!-- 저는 아무리 찾아도 오류를 못찾아 gpt 선생님의 코드를 복사해 왔습니다 저는 멍청이 입니다 -->
+    <script>            
+        function twoDigit(num){
+            return num < 10 ? '0' + num : String(num);
+        }
+        
+        function myClock(){
+            let date = new Date();
+            return `${twoDigit(date.getHours())}:${twoDigit(date.getMinutes())}:${twoDigit(date.getSeconds())}`; // date.getSeconds() 괄호 추가
+        }
+        
+        let si = setInterval(() => {
+            const timeStr = myClock();
+            document.getElementById('time').innerHTML = timeStr;
+        }, 1000);
+        setTimeout(() => {
+            clearInterval(si);
+        }, 30000);
+    </script>
+</body>
+</html>
