@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <script>
+        function delayeMove() {
+            let imgTag = document.querySelector('img');
+            imgTag.src = 'please-wait.gif'
+            setTimeout(() => {
+                location.href='https://www.hanbit.co.kr/academy/';
+            }, 3000);
+        }
+    </script>
+
+</head>
+<body style="margin: 40px;">
+    <button onclick="location.href='https://www.hanbit.co.kr/academy/'">사이트 즉시 이동</button>
+    <button onclick="delayeMove()">사이트 지연 이동</button>
+</body>
+</html>
