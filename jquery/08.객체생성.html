@@ -6,10 +6,19 @@
     <title>제목</title>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
-        
+        $(document).ready(() => {
+            $('<h1></h1>').text('객체 생성').appendTo('body');
+            for (let i = 0; i < 256; i++){
+                $('<div></div>')
+                    .css({height: '3px', paddingLeft: '20px',
+                        backgroundColor: `rgb(${i},${i},${i})`,
+                    })
+                    .appendTo('body');
+            }
+        });
     </script>
 </head>
 <body style="margin: 40px;">
-    
+
 </body>
 </html>
